@@ -148,10 +148,18 @@ body {
 .main-hero {
     display: block;
     height: 600px;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 1600px;
     padding: 200px 0px;
+    margin-left: auto;
+    margin-right: auto;
 
     text-align: center;
+
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/fonhero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--hero-footer-black-color);
 }
 
@@ -234,8 +242,40 @@ body {
 
 .features-list {
     display: flex;
-
     list-style-type: none;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.features-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: var(--background-gray-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna1.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock1.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram1.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut1.svg);
 }
 
 .features-head {
@@ -265,16 +305,6 @@ body {
     color: var(--color-text-paragraf);
 }
 
-
-
-.features-item {
-    width: 270px;
-}
-
-
-.features-item:not(:first-child) {
-    margin-left: 30px;
-}
 
 /* Section Activity */
 .activity {
