@@ -17,8 +17,9 @@ html {
 --hero-button-blue-color: #188CE8;
 --background-gray-color: #F5F4FA;
 --alternativ-gray-color-rgba: rgba(255, 255, 255, 0.6);
---cards-border-gray-color:#EEEEEE;
+--cards-border-gray-color: #EEEEEE;
 --header-border-gray-color: #ECECEC;
+--primary-icon-gray-color: #AFB1B8;
 
 }
 
@@ -73,6 +74,7 @@ body {
 .nav-list {
     display: flex;
     margin-left: 93px;
+    list-style-type: none;
 
 }
 
@@ -92,6 +94,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:  var(--main-color-text);
+
+    text-decoration: none;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -111,6 +115,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text-paragraf);
+
+    text-decoration: none;
 }
 
 .mail-link:hover, .mail-link:focus, 
@@ -118,17 +124,11 @@ body {
     color: var(--primary-blue-color);
 }
 
-.nav-list, .header-contacts {
-    list-style-type: none;
-}
-
-.nav-link, .mail-link, .tel-link {
-    text-decoration: none;
-}
 
 .header-contacts {
     display: flex;
     margin-left: auto;
+    list-style-type: none;
 }
 
 .mail-cont {
@@ -257,6 +257,10 @@ body {
     content: "";
     display: block;
     height: 120px;
+
+    
+    border-radius: 4px;
+
     background-color: var(--background-gray-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -279,7 +283,7 @@ body {
 }
 
 .features-head {
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 0;
 
 
@@ -412,6 +416,28 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-text-paragraf);
+}
+
+
+.team-social-list {
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team-social-link {
+    outline: 1px solid palevioletred;
+    display: flex;
+    width: 44px;
+    height: 44px;
+}
+
+.team-social-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 
