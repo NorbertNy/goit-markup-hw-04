@@ -30,7 +30,7 @@ html {
 body {
     background-color: var(--primary-white-color);
 }
-/* Header style */
+
 
 .list {
     padding: 0;
@@ -46,7 +46,12 @@ body {
     padding-right: 15px;
     /* outline: 1px solid blue; */
 }
+/* Header style */
 
+
+.page-header {
+    border-bottom: 1px solid var(--header-border-gray-color);
+}
 
 .header-nav {
     display: flex;
@@ -105,7 +110,7 @@ body {
 
 
 .mail-link, .tel-link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -115,12 +120,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text-paragraf);
+    align-items: center;
 
     text-decoration: none;
 }
 
 .mail-icon, .tel-icon {
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .mail-link:hover, .mail-link:focus, 
@@ -536,19 +543,16 @@ body {
 
 .page-footer {
     background-color: var(--hero-footer-black-color);
+    padding: 60px 0;
 }
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 
 /* Section Address Style */
-.footer-contacts {
-    padding: 60px 0;
-}
-
-
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -614,7 +618,6 @@ body {
 
 /* Section Social Style */
 .footer-social {
-    padding: 60px 0;
     margin-left: 70px;
 }
 
@@ -739,8 +742,9 @@ body {
 }
 
 .portfolio-mail-link, .portfolio-tel-link {
-    display: block;
+    display: flex;
     padding: 32px 0;
+    align-items: center;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -752,6 +756,7 @@ body {
 
 .portfolio-mail-icon, .portfolio-tel-icon {
     fill: currentColor;
+    margin-right: 10px;
 }
 
 
@@ -888,18 +893,16 @@ body {
 /* Portfolio footer style */
 .portfolio-footer {
     background-color: var(--hero-footer-black-color);
+    padding: 60px 0;
 }
 
 .portfolio-footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 
 /* Section Portfolio Footer Address style */
-.portfolio-footer-contacts {
-    padding: 60px 0;
-}
-
 .portfolio-footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -954,7 +957,6 @@ body {
 
 /* Section Portfolio Footer Social style  */
 .portfolio-footer-social {
-    padding: 60px 0;
     margin-left: 70px;
 }
 
